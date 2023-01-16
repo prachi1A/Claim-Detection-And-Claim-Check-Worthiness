@@ -85,6 +85,8 @@ given sentence. For this purpose we have used word2vec embeddings.
 
 Figure: Syntactic feature extraction and encoding process. Feature vectors are based on the number of times it is
 seen in the given sentence.
+
+
 ![image](https://user-images.githubusercontent.com/73738475/212742070-ba61120c-8e55-4bc7-9b9a-d27b19fbf70d.png)
 
 Task2: Claim check Worthiness
@@ -107,9 +109,12 @@ of normal Tf-Idf count, the documents (or, sentences) used in both Tf and Idf be
 Tf count takes the actual data but Idf count takes the fact-checking news articles for consideration. The reason behind
 this modification is to check word similarity between a claim and an explanation. The more the similarity is, the more
 an explanation is related to the claim.
+
 ![image](https://user-images.githubusercontent.com/73738475/212743102-6ddd6ed2-f04d-4ed7-874c-a7d1aa2dfda5.png)
+
 But in case, if the term is not present in the claim checking tweets, the Idf count is taken as 0. Now the Tf and
 Idf are multiplied to calculate the modified Tf-Idf count(feature model).
+
 ![image](https://user-images.githubusercontent.com/73738475/212743281-3f4ca492-2394-477d-9878-03b3d4b8e514.png)
 
 
