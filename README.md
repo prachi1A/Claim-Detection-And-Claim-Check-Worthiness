@@ -40,4 +40,6 @@ Simultaneously, deploying separate systems based on the source of a text is inef
 achieving human intelligence in natural language processing tasks.
 An ideal situation would be a framework that can effectively detect claims in the general setting.
 
+![image](https://user-images.githubusercontent.com/73738475/212742070-ba61120c-8e55-4bc7-9b9a-d27b19fbf70d.png)
+
 
