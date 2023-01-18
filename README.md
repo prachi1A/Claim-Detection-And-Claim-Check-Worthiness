@@ -47,33 +47,47 @@ audience. We approached this problem with the idea of creating a rich feature re
 of a large feature set with PCA and then learning the model with a SVM. In doing so, our goal is also to understand
 which features are the most important for check-worthiness prediction from tweet content.
 Pre-processing Steps:
+
 • Removing URLs
+
 • Placeholders Some text cleaning was already done on the dataset which replaced some links with link and all
 the videos with [video]. They don’t seem to be of any value when doing sentiment analysis so we will remove
 them with regex.
+
 • HTML reference characters were removed because they were of no use for the analysis.
+
 • Removing punctuation
+
 • Twitter handles were changed to “@mention” in acknowledgement of the need for protecting people’s privacy.
+
 • Tokenizing the text
+
 • Remove Punctuations
+
 • Removed Emojis if any
+
 • Removed Stop words
+
 Syntactic Features:
 We use the following syntactic features for English Parts-of-Speech (POS) tags, named entities (NE) and dependency
 parse tree relations. We use the pre-processed text and run o the shelf tools to extract syntactic information of tweets
 and then convert each group of information to feature sets. For English we used spaCy.
+
 Part-of-Speech:
 For both English we extract 16 POS tags in total and through our empirical evaluation we nd that the following eight
 tags to be the most useful when used as features: NOUN, VERB, PROPN, ADJ, ADV, NUM, ADP, PRON.
+
 Named Entities:
 We identified the following named entity types to be the most important features through our evaluation: (GPE,
 PERSON, ORG, NORP, LOC, DATE, CARDINAL, TIME, ORDINAL, FAC, MONEY). We also found that while developing
 feature combinations named entities do not add much value to overall accuracy, and hence our primary and contrastive
 submissions do not include them.
+
 Syntactic Dependencies:
 These features are constructed using dependency relation between tokens in a given tweet.We use the dependency
 relation between two nodes in the parsed tree if the the child and parent nodes’ POS tags are one of the following ADJ,
 ADV, NOUN, PROPN, VERB or NUM.
+
 Average Word Embeddings:
 One simple way to get a contextual representation of a sentence is to average the word embeddings of each token in a
 given sentence. For this purpose we have used word2vec embeddings.
