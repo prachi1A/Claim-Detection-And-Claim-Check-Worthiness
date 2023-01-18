@@ -95,12 +95,8 @@ modified Tf-Idf model with a Gradient Boosting classifier. The frequency with wh
 or text is measured by term frequency (tf). Because each document is different in length, a term may appear more
 frequently in longer documents than in shorter ones. As a result, term frequency is normalised by document length, or
 the total number of terms in the document.
-Task2: Claim check Worthiness
-In the Second task Tf-Idf model is created to classify the claims whether check-worthy or not. We have used a
-modified Tf-Idf model with a Gradient Boosting classifier. The frequency with which a term appears in a document
-or text is measured by term frequency (tf). Because each document is different in length, a term may appear more
-frequently in longer documents than in shorter ones. As a result, term frequency is normalised by document length, or
-the total number of terms in the document.
+
+
 Idf is generally defined by the logarithm of the ratio of total number of documents in the dataset and the number
 of documents with that term in them. The idf calculation is modified in our model. We Have Taken the statements
 from the data as documents in Tf calculation. The modified Idf is defined as the logarithm of the ratio of total no. of
