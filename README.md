@@ -93,7 +93,6 @@ One simple way to get a contextual representation of a sentence is to average th
 given sentence. For this purpose we have used word2vec embeddings.
 
 
-![image](https://user-images.githubusercontent.com/73738475/212742549-94bde3f7-c2f5-4ef8-a028-89e719331d98.png)
 
 
 
