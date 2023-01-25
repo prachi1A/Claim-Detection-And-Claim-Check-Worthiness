@@ -104,7 +104,7 @@ seen in the given sentence.
 
 Task2: Claim check Worthiness
 In the Second task Tf-Idf model is created to classify the claims whether check-worthy or not. We have used a
-modified Tf-Idf model with a Gradient Boosting classifier. The frequency with which a term appears in a document
+Tf-Idf model with a Gradient Boosting classifier. The frequency with which a term appears in a document
 or text is measured by term frequency (tf). Because each document is different in length, a term may appear more
 frequently in longer documents than in shorter ones. As a result, term frequency is normalised by document length, or
 the total number of terms in the document.
