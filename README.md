@@ -111,18 +111,12 @@ the total number of terms in the document.
 
 
 Idf is generally defined by the logarithm of the ratio of total number of documents in the dataset and the number
-of documents with that term in them. The idf calculation is modified in our model. We Have Taken the statements
-from the data as documents in Tf calculation. The modified Idf is defined as the logarithm of the ratio of total no. of
-documents (the explanations from the fact-checking articles) and number of documents with the term in them. In case
-of normal Tf-Idf count, the documents (or, sentences) used in both Tf and Idf belong to the same article. But in our case,
-Tf count takes the actual data but Idf count takes the fact-checking news articles for consideration. The reason behind
-this modification is to check word similarity between a claim and an explanation. The more the similarity is, the more
-an explanation is related to the claim.
+of documents with that term in them. We Have Taken the statements
+from the data as documents in Tf calculation. 
 
 tf = ( total number of repetition of a term in a tweet/ total number of terms in a tweet )
 
-But in case, if the term is not present in the claim checking tweets, the Idf count is taken as 0. Now the Tf and
-Idf are multiplied to calculate the modified Tf-Idf count(feature model).
-
 Idf = log (  total number of tweets / total number of tweets containing a particular term )
+ 
+Now the Tf and Idf are multiplied to calculate the Tf-Idf count(feature model).
 
