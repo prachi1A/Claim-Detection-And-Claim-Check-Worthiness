@@ -119,11 +119,14 @@ Tf count takes the actual data but Idf count takes the fact-checking news articl
 this modification is to check word similarity between a claim and an explanation. The more the similarity is, the more
 an explanation is related to the claim.
 
-![image](https://user-images.githubusercontent.com/73738475/212743102-6ddd6ed2-f04d-4ed7-874c-a7d1aa2dfda5.png)
+tf = total number of repetition of words in a tweet
+     -----------------------------------------------
+     total number of words in a tweet
 
 But in case, if the term is not present in the claim checking tweets, the Idf count is taken as 0. Now the Tf and
 Idf are multiplied to calculate the modified Tf-Idf count(feature model).
 
-![image](https://user-images.githubusercontent.com/73738475/212743281-3f4ca492-2394-477d-9878-03b3d4b8e514.png)
-
+Idf = log (  total number of tweets
+            -----------------------
+             total number of tweets containing a particular word )
 
