@@ -5,9 +5,7 @@ comments and opinions of the influential people in power keep changing every day
 two problems which are part of the fact checking ecosystem that can help to automate fact-checking of claims in an ever
 increasing stream of content on social media. For the first problem i.e, claim detection, we explore the fusion of syntactic
 features and wordtovec, to classify whether a tweet includes a claim or not. We conduct a detailed feature analysis and present our best performing models
-for English tweets.For the second problem, we check the truthfulness of the claims. We classify the claims for check-worthiness with our modified Tf-Idf model. 
-We check the truthfulness of the claims by using POS, sentiment score and cosine similarity
-features.
+for English tweets.For the second problem, we check the truthfulness of the claims. We classify the claims for check-worthiness with our Tf-Idf model. 
 # Introduction
 The concept of a claim lies at the core of the argument mining task. The difficulty with the claim detection task stems
 from the disparity in conceptualization and the lack of a proper definition of a claim. The task of detecting claims
